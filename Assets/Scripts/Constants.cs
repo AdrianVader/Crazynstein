@@ -7,9 +7,9 @@ public static class Constants
 
 
     // PLAYER MOVEMENT
-    public const string PLAYER_MOVE_LEFT = "a";
-    public const string PLAYER_MOVE_RIGHT = "d";
-    public const string PLAYER_JUMP = "space";
+    public const string PLAYER_MOVE_LEFT_KEY = "a";
+    public const string PLAYER_MOVE_RIGHT_KEY = "d";
+    public const string PLAYER_JUMP_KEY = "space";
 
     // PLAYER INTERACTION
     public const string PLAYER_INTERACTION = "e";
@@ -21,6 +21,15 @@ public static class Constants
 
     // PLAYER ANIMATION
     public const float PLAYER_INITIAL_VALUE_LIFE = 100.0f;
+
+    // PLAYER CHARACTERISTICS
+    public const float PLAYER_MOVEMENT_SPEED = 5.0f;
+    public const float PLAYER_JUMP_HEIGTH = 3.0f;
+
+    // TAGS
+    public const string PLAYER_TAG = "Player";
+    public const string GROUND_TAG = "Ground";
+
 
 
 }
