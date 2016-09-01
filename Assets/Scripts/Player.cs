@@ -7,6 +7,7 @@ public class Player : MonoBehaviour {
     public float _life;
     public float _horizontalMovementSpeed;
     public float _jumpHeigth;
+    public bool _lookingRight;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +18,7 @@ public class Player : MonoBehaviour {
         this.tag = Constants.PLAYER_TAG;
 
         // Set the default values
+        this._lookingRight = true;
         this._life = Constants.PLAYER_INITIAL_VALUE_LIFE;
         this._horizontalMovementSpeed = Constants.PLAYER_MOVEMENT_SPEED;
         this._jumpHeigth = Constants.PLAYER_JUMP_HEIGTH;

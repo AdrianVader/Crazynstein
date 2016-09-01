@@ -44,12 +44,14 @@ public class CharacterBehaviour : MonoBehaviour {
         { // Lateral left
 			
 			transform.rotation = new Quaternion(0f,180f,0f,0f);
+            this._player._lookingRight = false;
             rb.velocity = new Vector3(-this._player._horizontalMovementSpeed, rb.velocity.y, 0f);
         }
         else if (Input.GetKey(Constants.PLAYER_MOVE_RIGHT_KEY))
         { // Lateral right
 			
 			transform.rotation = new Quaternion(0f,0f,0f,0f);
+            this._player._lookingRight = true;
             rb.velocity = new Vector3(this._player._horizontalMovementSpeed, rb.velocity.y, 0f);
 		} else { // Stay
 			
