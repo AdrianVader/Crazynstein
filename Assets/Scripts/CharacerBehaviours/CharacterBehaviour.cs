@@ -28,6 +28,10 @@ public class CharacterBehaviour : MonoBehaviour {
 
         this.jump();
 
+        this.crouch();
+
+        this.use();
+
         this.animations();
 
 	}
@@ -73,6 +77,25 @@ public class CharacterBehaviour : MonoBehaviour {
             }
         }
 
+    }
+
+    protected void crouch() {
+        if (Input.GetKeyDown(Constants.PLAYER_CROUCH_KEY))
+        { // Crouch
+
+            Debug.Log("You pressed " + Constants.PLAYER_CROUCH_KEY);
+            foreach (Transform child in this.gameObject.transform) {
+                Debug.Log(child.name);
+            }
+        }
+    }
+
+    protected void use() {
+        if (Input.GetKeyDown(Constants.PLAYER_USE_KEY))
+        { // Use
+
+            Debug.Log("You pressed " + Constants.PLAYER_USE_KEY);
+        }
     }
 
     protected void animations() {

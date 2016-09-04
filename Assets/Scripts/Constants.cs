@@ -7,9 +7,11 @@ public static class Constants
 
 
     // PLAYER MOVEMENT
-    public const string PLAYER_MOVE_LEFT_KEY = "a";
-    public const string PLAYER_MOVE_RIGHT_KEY = "d";
-    public const string PLAYER_JUMP_KEY = "space";
+    public const KeyCode PLAYER_MOVE_LEFT_KEY = KeyCode.A;
+    public const KeyCode PLAYER_MOVE_RIGHT_KEY = KeyCode.D;
+    public const KeyCode PLAYER_JUMP_KEY = KeyCode.Space;
+    public const KeyCode PLAYER_CROUCH_KEY = KeyCode.E;
+    public const KeyCode PLAYER_USE_KEY = KeyCode.LeftControl;
 
     // PLAYER INTERACTION
     public const string PLAYER_INTERACTION = "e";

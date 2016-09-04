@@ -17,9 +17,9 @@ public class SceneCamera : MonoBehaviour {
 
         if (this._player != null)
         {
-            Debug.Log("BEFORE!" + this.transform.position + "   " + this._player.transform.position.x);
+
             this.transform.position = new Vector3(this._player.transform.position.x, this._player.transform.position.y, this.transform.position.z);
-            Debug.Log("AFTER!" + this.transform.position + "   " + this._player.transform.position.x);
+
         }
         else
         {
