@@ -6,6 +6,7 @@ public class Sciencist : CharacterBehaviour
 
     public float _lastAttack;
     public float _attackSpeed;
+    public GameObject _punchAttack;
 
 	// Use this for initialization
 	void Start () {
@@ -35,6 +36,13 @@ public class Sciencist : CharacterBehaviour
 
             this._lastAttack = Time.time;
             this._animator.Play(Constants.PLAYER_PUNCH_ANIMATION);
+
+            GameObject attack = ((GameObject)Instantiate(this._punchAttack, this.gameObject.transform.position, Quaternion.Euler(Vector3.zero)));
+            attack.transform.parent = this.gameObject.transform;
+            if (!this._player._lookingRight) {
+                attack.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
+            }
+
             //this._animator.SetBool("Punch", true);
             /*Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             foreach(Transform child in this.gameObject.transform){
