@@ -27,6 +27,7 @@ public static class Constants
     // PLAYER CHARACTERISTICS
     public const float PLAYER_MOVEMENT_SPEED = 5.0f;
     public const float PLAYER_JUMP_HEIGTH = 3.0f;
+    public const float PLAYER_MAXIMUM_LIFE_TIME_PUNCH = 0.2f;
 
     // TAGS
     public const string PLAYER_TAG = "Player";

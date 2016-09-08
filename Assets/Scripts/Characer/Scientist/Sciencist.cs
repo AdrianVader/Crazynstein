@@ -43,6 +43,10 @@ public class Sciencist : CharacterBehaviour
                 attack.transform.rotation = Quaternion.Euler(new Vector3(0, 180, 0));
             }
 
+            if (this._crouched) {
+                attack.transform.position -= new Vector3(0,0.55f,0);
+            }
+
             //this._animator.SetBool("Punch", true);
             /*Vector3 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             foreach(Transform child in this.gameObject.transform){

@@ -7,8 +7,11 @@ public class CharacterBehaviour : MonoBehaviour {
     public bool _ground;
 
     public Player _player;
+
     public bool _leftMovementPressed;
     public bool _rightMovementPressed;
+
+    public bool _crouched;
 
 	// Use this for initialization
 	void Start () {
@@ -21,6 +24,11 @@ public class CharacterBehaviour : MonoBehaviour {
 
         this._animator = this.GetComponent<Animator>();
         this._ground = true;
+
+        this._leftMovementPressed = false;
+        this._rightMovementPressed = false;
+
+        this._crouched = false;
     }
 	
 	// Update is called once per frame
@@ -116,8 +124,9 @@ public class CharacterBehaviour : MonoBehaviour {
     }
 
     protected void crouch() {
-        if (Input.GetKeyDown(Constants.PLAYER_CROUCH_KEY))
+        if (Input.GetKeyDown(Constants.PLAYER_CROUCH_KEY) && !this._crouched)
         { // Crouch
+            this._crouched = true;
 
             foreach (Transform child in this.gameObject.transform) {
                 if (child.name.Equals("Body") || child.name.Equals("Neck") || child.name.Equals("HeadPoint") || child.name.Equals("RightArmPoint") || child.name.Equals("LeftArmPoint"))
@@ -130,8 +139,9 @@ public class CharacterBehaviour : MonoBehaviour {
     }
 
     protected void standUp() {
-        if (Input.GetKeyUp(Constants.PLAYER_CROUCH_KEY))
+        if (Input.GetKeyUp(Constants.PLAYER_CROUCH_KEY) && this._crouched)
         { // Stand up
+            this._crouched = false;
 
             foreach (Transform child in this.gameObject.transform)
             {
