@@ -45,13 +45,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Characer\CharacterBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Characer\Frog.cs" />
-     <Compile Include="Assets\Scripts\Characer\Scientist\Punch.cs" />
-     <Compile Include="Assets\Scripts\Characer\Scientist\Sciencist.cs" />
+     <Compile Include="Assets\Scripts\Characers\CharacterBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Characers\Frog.cs" />
+     <Compile Include="Assets\Scripts\Characers\Scientist\Punch.cs" />
+     <Compile Include="Assets\Scripts\Characers\Scientist\Sciencist.cs" />
      <Compile Include="Assets\Scripts\Constants.cs" />
+     <Compile Include="Assets\Scripts\Damage.cs" />
+     <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+     <Compile Include="Assets\Scripts\Enemies\FrogEnemy.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\SceneCamera.cs" />
+     <Compile Include="Assets\Scripts\TODO.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programas/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

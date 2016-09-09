@@ -5,7 +5,7 @@ public static class Constants
 {
 
 
-
+    // ********** PLAYER ********** //
     // PLAYER MOVEMENT
     public const KeyCode PLAYER_MOVE_LEFT_KEY = KeyCode.A;
     public const KeyCode PLAYER_MOVE_RIGHT_KEY = KeyCode.D;
@@ -21,20 +21,36 @@ public static class Constants
     public const string PLAYER_ANIMATION_VARIABLE_JUMP = "Jump";
     public const string PLAYER_ANIMATION_VARIABLE_GROUND = "Ground";
 
-    // PLAYER ANIMATION
+    // PLAYER STATS
     public const float PLAYER_INITIAL_VALUE_LIFE = 100.0f;
-
-    // PLAYER CHARACTERISTICS
     public const float PLAYER_MOVEMENT_SPEED = 5.0f;
     public const float PLAYER_JUMP_HEIGTH = 3.0f;
     public const float PLAYER_MAXIMUM_LIFE_TIME_PUNCH = 0.2f;
 
+    // PLAYER ANIMATION NAMES
+    public const string PLAYER_PUNCH_ANIMATION = "Punch";
+
+    // SCIENTIST
+    public const float PLAYER_SCIENTIST_PUNCH_DAMAGE = 2.0f;
+
+
+
+    // ********** ENEMIES ********** //
+    // ENEMIES DEFAULT VALUES
+    public const float ENEMY_FROG_LIFE = 5.0f;
+
+
+
+    // ********** TAGS ********** //
     // TAGS
     public const string PLAYER_TAG = "Player";
     public const string GROUND_TAG = "Ground";
 
-    // ANIMATION NAMES
-    public const string PLAYER_PUNCH_ANIMATION = "Punch";
+
+
+    // ********** SCRIPTS ********** //
+    // SCRIPTS NAMES
+    public const string DAMAGE_SCRIPT = "Damage";
 
 
 

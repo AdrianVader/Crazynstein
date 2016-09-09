@@ -11,6 +11,9 @@ public class Punch : MonoBehaviour {
 
         this._createdTime = Time.time;
         this._maximumLifeTime = Constants.PLAYER_MAXIMUM_LIFE_TIME_PUNCH;
+
+        this.gameObject.AddComponent<Damage>();
+        this.gameObject.GetComponent<Damage>()._damage = Constants.PLAYER_SCIENTIST_PUNCH_DAMAGE;
 	
 	}
 	
