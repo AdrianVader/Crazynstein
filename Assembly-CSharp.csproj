@@ -45,10 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Characers\CharacterBehaviour.cs" />
-     <Compile Include="Assets\Scripts\Characers\Frog.cs" />
-     <Compile Include="Assets\Scripts\Characers\Scientist\Punch.cs" />
-     <Compile Include="Assets\Scripts\Characers\Scientist\Sciencist.cs" />
+     <Compile Include="Assets\Scripts\Characters\CharacterBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Characters\Frog.cs" />
+     <Compile Include="Assets\Scripts\Characters\Scientist\Punch.cs" />
+     <Compile Include="Assets\Scripts\Characters\Scientist\Sciencist.cs" />
      <Compile Include="Assets\Scripts\Constants.cs" />
      <Compile Include="Assets\Scripts\Damage.cs" />
      <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
