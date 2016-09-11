@@ -36,8 +36,20 @@ public static class Constants
 
 
     // ********** ENEMIES ********** //
-    // ENEMIES DEFAULT VALUES
+    // FROG
     public const float ENEMY_FROG_LIFE = 5.0f;
+    public const float ENEMY_FROG_TIME_BETWEEN_JUMPS = 1.25f;
+    public const float ENEMY_FROG_MAXIMUM_DISTANCE_FROM_INITIAL_POINT = 3.0f;
+    public const float ENEMY_FROG_JUMP_HEIGHT = 3.0f;
+
+
+
+
+    // ********** OBJECTS ********** //
+    // DROPS
+    public const float DROP_JUMP = 3.0f;
+    public const float DROP_ROTARION_SPEED = 2.0f;
+    public const float DROP_TAKE_MININUM_DISTANCE = 1.5f;
 
 
 

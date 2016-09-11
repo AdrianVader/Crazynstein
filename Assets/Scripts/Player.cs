@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Player : MonoBehaviour {
 
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour {
     public float _horizontalMovementSpeed;
     public float _jumpHeigth;
     public bool _lookingRight;
+    public List<GameObject> _inventory;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class Player : MonoBehaviour {
         this._life = Constants.PLAYER_INITIAL_VALUE_LIFE;
         this._horizontalMovementSpeed = Constants.PLAYER_MOVEMENT_SPEED;
         this._jumpHeigth = Constants.PLAYER_JUMP_HEIGTH;
+
+        this._inventory = new List<GameObject>();
         
 	}
 	

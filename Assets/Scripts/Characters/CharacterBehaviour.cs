@@ -46,8 +46,6 @@ public class CharacterBehaviour : MonoBehaviour {
         this.crouch();
         this.standUp();
 
-        this.use();
-
         this.animations();
     }
 
@@ -151,14 +149,6 @@ public class CharacterBehaviour : MonoBehaviour {
                 }
             }
             this.GetComponent<BoxCollider>().center = new Vector3(this.GetComponent<BoxCollider>().center.x, this.GetComponent<BoxCollider>().center.y + 0.25f, this.GetComponent<BoxCollider>().center.z);
-        }
-    }
-
-    protected void use() {
-        if (Input.GetKeyDown(Constants.PLAYER_USE_KEY))
-        { // Use
-
-            Debug.Log("You pressed " + Constants.PLAYER_USE_KEY);
         }
     }
 
