@@ -51,6 +51,8 @@ public static class Constants
     public const float DROP_ROTARION_SPEED = 2.0f;
     public const float DROP_TAKE_MININUM_DISTANCE = 1.5f;
 
+    // COMPUTER
+    public const float COMPUTER_MININUM_INTERACTION_DISTANCE = 1.5f;
 
 
     // ********** TAGS ********** //
