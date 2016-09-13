@@ -53,6 +53,9 @@ public static class Constants
 
     // COMPUTER
     public const float COMPUTER_MININUM_INTERACTION_DISTANCE = 1.5f;
+    public const string COMPUTER_CANVAS_CHILD_NAME = "Canvas";
+    public const string COMPUTER_MAIN_MENU_CHILD_NAME = "MainMenu";
+    public const string COMPUTERS_FACE_CHILD_NAME = "ComputersFace";
 
 
     // ********** TAGS ********** //

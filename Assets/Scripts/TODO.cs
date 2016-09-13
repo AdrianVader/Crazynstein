@@ -9,6 +9,8 @@ public class TODO {
      * 
      * TODO: Crear probabilidad de dropeo que disminuye con la fuerza con la que atacas al enemigo.
      * 
+     * TODO: Cambiar el giro de los personajes de la escala a la rotación.
+     * 
      */
 
 }
